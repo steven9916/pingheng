@@ -225,8 +225,8 @@ proxy-groups:
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
- 
   proxies:
+  
     - vless-v1
     - vless-v2
     - vless-v3
