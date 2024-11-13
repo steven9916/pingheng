@@ -226,6 +226,20 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: consistent-hashing
+  proxies:
+  
+    - vless-v1
+    - vless-v2
+    - vless-v3
+    - vless-v4
+    - vless-v5
+    - vless-v6
+    - vless-v7
+    - warp-wireguard
+    - us-fd-zxing
+    - luyou-steven9916
+    - luyou-zxing
+  
 - name: ⚖️ 负载均衡-轮询
   type: load-balance
   url: http://www.gstatic.com/generate_204
