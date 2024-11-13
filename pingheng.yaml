@@ -225,6 +225,7 @@ proxy-groups:
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
+  strategy: consistent-hashing
   proxies:
   
     - vless-v1
@@ -234,42 +235,12 @@ proxy-groups:
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
-
-- name: 自动选择
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
-  proxies:
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
-    - vless-v5
-    - vless-v6
-    - vless-v7
-    - warp-wireguard
-    - us-fd-zxing
-    - luyou-steven9916
-    - luyou-zxing
       
 - name: 🌍选择代理
   type: select
   proxies:
     - 负载均衡                        # 自定义添加的节点名称
-    - 自动选择
-    - DIRECT
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
-    - vless-v5
-    - vless-v6
-    - vless-v7
-    - warp-wireguard
-    - us-fd-zxing
-    - luyou-steven9916
-    - luyou-zxing
+
    
 # 代理规则可自行添加 
 rules:
