@@ -221,30 +221,10 @@ proxies:
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:
-- name: ⚖️ 负载均衡-散列
+- name: 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
-  strategy: consistent-hashing
-  proxies:
-  
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
-    - vless-v5
-    - vless-v6
-    - vless-v7
-    - warp-wireguard
-    - us-fd-zxing
-    - luyou-steven9916
-    - luyou-zxing
-  
-- name: ⚖️ 负载均衡-轮询
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  strategy: round-robin
   proxies:
   
     - vless-v1
@@ -280,8 +260,7 @@ proxy-groups:
 - name: 🌍选择代理
   type: select
   proxies:
-    - ⚖️ 负载均衡-散列
-    - ⚖️ 负载均衡-轮询         # 自定义添加的节点名称
+    - 负载均衡                        # 自定义添加的节点名称
     - 自动选择
     - DIRECT
     - vless-v1
