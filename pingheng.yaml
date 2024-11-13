@@ -1,0 +1,295 @@
+# DNS 配置可自行修改
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
+    - 223.5.5.5
+    - 114.114.114.114
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      
+rule-providers:
+  AD:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/AD.yaml"
+    path: ./rules/AD.yaml
+    interval: 86400
+    
+  EasyList:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/EasyList.yaml"
+    path: ./rules/EasyList.yaml
+    interval: 86400
+    
+  EasyListChina:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/EasyListChina.yaml"
+    path: ./rules/EasyListChina.yaml
+    interval: 86400
+
+  EasyPrivacy:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/EasyPrivacy.yaml"
+    path: ./rules/EasyPrivacy.yaml
+    interval: 86400
+
+  ProgramAD:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/ProgramAD.yaml"
+    path: ./rules/ProgramAD.yaml
+    interval: 86400
+# 当前 13 个主流协议节点配置模版，按需求修改，如不需要使用某协议节点，则无需删除，确保代理分流中没有该节点即可
+proxies:
+
+- name: vless-v1                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: 9916.eU.oRG                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/3FXAvOU4Y0SrO0oI"                              # 自定义 path 路径
+    headers:
+      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: vless-v2                              # 可以自定义节点名称
+  type: vless
+  server: 172.67.143.181                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: 9916.EU.ORg                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/RTW5T33ek4h5jerv?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: vless-v3                              # 可以自定义节点名称
+  type: vless
+  server: 172.67.165.132                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: BPb.STeVEn9916.eu.OrG                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/pbDc8hZcR1df6ElX?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: vless-v4                           # 可以自定义节点名称
+  type: vless
+  server: 172.67.215.87                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: BpB.zxIng.eU.ORG                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/AVCiMMXETW7lmjDu?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: vless-v5                                   # 可以自定义节点名称
+  type: vless
+  server: 2606:4700:3036::ac43:8fb5                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                       # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: BpB.Zxing.eu.ORG                         # SNI 域名，与下面 host 一致
+  ws-opts:
+    path: "/9NUo3p2Lz47bq1y8?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: vless-v6                               # 可以自定义节点名称
+  type: vless
+  server: 2606:4700:3035::ac43:a584                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  alterId: 0
+  cipher: auto
+  udp: false
+  tls: true
+  network: ws
+  servername: bpB.ZxIng.EU.ORg                         # SNI 域名，与下面 host 一致
+  ws-opts:
+    path: "/A8lN6glpDQ4d2AXS?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: vless-v7                               # 可以自定义节点名称
+  type: vless
+  server: 2606:4700:3037::ac43:d757                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  alterId: 0
+  cipher: auto
+  udp: false
+  tls: true
+  network: ws
+  servername: BPb.stevEn9916.eU.ORG                         # SNI 域名，与下面 host 一致
+  ws-opts:
+    path: "/7KaACdsa1Bhjkz1O?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: warp-wireguard                                       # 可以自定义节点名称
+  type: wireguard         
+  server: 162.159.195.255                                     # 可自定义优选 EndPoint IP，与下方端口相对应
+  port: 1180                                                 # 可自定义优选 EndPoint IP，与上方 IP 相对应
+  ip: 172.16.0.2
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  private-key: OLx1djIFQ7+EAu0pufciWEtZPeEFjqS97cPcFDec5Hg=  # 获取 warp 的 私钥
+  udp: true
+
+- name: us-fd-zxing                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: us.zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/"                              # 自定义 path 路径
+    headers:
+      Host: us.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: luyou-steven9916                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: 8179d515-b364-455f-9452-5a47b644ddc1       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: luyou.steven9916.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2048"                              # 自定义 path 路径
+    headers:
+      Host: luyou.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+      
+- name: luyou-zxing                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: 66fca8e6-868d-4a41-a115-d3ea1dcd9955       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: luyou.zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2048"                              # 自定义 path 路径
+    headers:
+      Host: luyou.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+
+# 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
+proxy-groups:
+- name: 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+
+    - vless-v1
+    - vless-v2
+    - vless-v3
+    - vless-v4
+    - vless-hk
+    - vless-jp
+    - vless-gb
+    - warp-wireguard
+    - us-fd-zxing
+    - luyou-steven9916
+    - luyou-zxing
+
+- name: 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+    - vless-v1
+    - vless-v2
+    - vless-v3
+    - vless-v4
+    - vless-hk
+    - vless-jp
+    - vless-gb
+    - warp-wireguard
+    - us-fd-zxing
+    - luyou-steven9916
+    - luyou-zxing
+      
+- name: 🌍选择代理
+  type: select
+  proxies:
+    - 负载均衡                                            # 自定义添加的节点名称
+    - 自动选择
+    - DIRECT
+    - vless-v1
+    - vless-v2
+    - vless-v3
+    - vless-v4
+    - vless-hk
+    - vless-jp
+    - vless-gb
+    - warp-wireguard
+    - us-fd-zxing
+    - luyou-steven9916
+    - luyou-zxing
+   
+# 代理规则可自行添加 
+rules:
+  - DOMAIN-SUFFIX,gitlab.com,DIRECT
+  - DOMAIN-SUFFIX,cloudflare.com,DIRECT
+  - DOMAIN-SUFFIX,justcn2.top,DIRECT
+  - DOMAIN,pan.quaek.com,DIRECT
+  - DOMAIN,minbrowser.org,DIRECT
+  - DOMAIN,bpb.steven9916.eu.org,DIRECT  
+  - DOMAIN,9916.eu.org,DIRECT
+  - DOMAIN,bpb.zxing.eu.org,DIRECT
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🌍选择代理
+  - RULE-SET,AD,REJECT
+  - RULE-SET,EasyList,REJECT
+  - RULE-SET,EasyListChina,REJECT
+  - RULE-SET,EasyPrivacy,REJECT
+  - RULE-SET,ProgramAD,REJECT
