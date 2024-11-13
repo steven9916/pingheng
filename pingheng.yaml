@@ -231,9 +231,9 @@ proxy-groups:
     - vless-v2
     - vless-v3
     - vless-v4
-    - vless-hk
-    - vless-jp
-    - vless-gb
+    - vless-v5
+    - vless-v6
+    - vless-v7
     - warp-wireguard
     - us-fd-zxing
     - luyou-steven9916
@@ -249,9 +249,9 @@ proxy-groups:
     - vless-v2
     - vless-v3
     - vless-v4
-    - vless-hk
-    - vless-jp
-    - vless-gb
+    - vless-v5
+    - vless-v6
+    - vless-v7
     - warp-wireguard
     - us-fd-zxing
     - luyou-steven9916
@@ -267,9 +267,9 @@ proxy-groups:
     - vless-v2
     - vless-v3
     - vless-v4
-    - vless-hk
-    - vless-jp
-    - vless-gb
+    - vless-v5
+    - vless-v6
+    - vless-v7
     - warp-wireguard
     - us-fd-zxing
     - luyou-steven9916
