@@ -221,10 +221,16 @@ proxies:
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:
-- name: 负载均衡
+- name: ⚖️ 负载均衡-散列
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
+  strategy: consistent-hashing
+- name: ⚖️ 负载均衡-轮询
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  strategy: round-robin
   proxies:
   
     - vless-v1
