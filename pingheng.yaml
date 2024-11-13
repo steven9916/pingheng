@@ -272,7 +272,8 @@ commands:
 - name: 🌍选择代理
   type: select
   proxies:
-    - 负载均衡                                            # 自定义添加的节点名称
+    - ⚖️ 负载均衡-散列   
+    - ⚖️ 负载均衡-轮询            # 自定义添加的节点名称
     - 自动选择
     - DIRECT
     - vless-v1
