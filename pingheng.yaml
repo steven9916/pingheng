@@ -225,7 +225,7 @@ proxy-groups:
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
-  strategy: consistent-hashing
+  strategy: round-robin
   proxies:
   
     - vless-v1
