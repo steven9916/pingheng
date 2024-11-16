@@ -262,15 +262,19 @@ proxies:
 
 - name: trojan-tcp-tls                             # 可以自定义节点名称
   type: trojan
-  server: 9916.eu.org                             # 解析的域名
+  server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  client-fingerprint: chrome
-  udp: true
-  sni: 9916.eu.org                                # SNI 域名，与上面 server 字段的地址一致
+  udp: false
+  tls: true
+   network: ws
+  servername: 9916.eu.org                        # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: 9916.eu.org  
   alpn:
     - h3
-  skip-cert-verify: false
 
 
 
