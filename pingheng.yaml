@@ -269,17 +269,13 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: zXIng.US.KG                         # SNI 域名，与下面 Host 一致
+  servername: zxing.us.kg                         # SNI 域名，与下面 Host 一致
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
       Host: zxing.us.kg   
-  sni: www.bing.com                                # SNI 域名，与上面 server 字段的地址一致
   alpn:
-    - h2
-    - http/1.1
-  skip-cert-verify: false
-
+    - h3
 
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
