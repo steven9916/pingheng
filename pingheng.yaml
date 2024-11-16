@@ -260,6 +260,27 @@ proxies:
     headers:
       Host: zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
+- name: trojan-tcp-tls                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                            # 解析的域名
+  port: 443                                     # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  client-fingerprint: chrome
+  udp: false
+  tls: true
+  network: ws
+  servername: zXIng.US.KG                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: zxing.us.kg   
+  sni: www.bing.com                                # SNI 域名，与上面 server 字段的地址一致
+  alpn:
+    - h2
+    - http/1.1
+  skip-cert-verify: false
+
+
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:
@@ -285,6 +306,7 @@ proxy-groups:
   type: select
   proxies:
     - 负载均衡                        # 自定义添加的节点名称
+    - trojan-tcp-tls
 
    
 # 代理规则可自行添加 
