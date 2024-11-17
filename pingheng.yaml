@@ -515,12 +515,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: cloudflarebpb.228229.xyz
+  sni: bpb.cc01.us.kg
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: cloudflarebpb.228229.xyz
+      Host: bpb.cc01.us.kg
   skip-cert-verify: false
 
   
