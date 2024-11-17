@@ -265,12 +265,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: panel.cloudnin.us.kg
+  sni: andylau19801.nyc.mn
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: panel.cloudnin.us.kg  
+      Host: andylau19801.nyc.mn
   skip-cert-verify: false
 
 - name: trojan-2                             # 可以自定义节点名称
@@ -304,12 +304,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: bpb.sayousay.me
+  sni: bpb.lzjh.us.kg
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: bpb.sayousay.me
+      Host: bpb.lzjh.us.kg
   skip-cert-verify: false
 
 - name: trojan-5                             # 可以自定义节点名称
@@ -317,12 +317,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: bpb.woxw.top
+  sni: bpb.stone57.v6.army
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: bpb.woxw.top
+      Host: bpb.stone57.v6.army
   skip-cert-verify: false
 
 - name: trojan-6                            # 可以自定义节点名称
@@ -343,12 +343,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: bpb.radishsub.dynv6.net
+  sni: dxm.duxaiomai02.filegear-sg.me
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: bpb.radishsub.dynv6.net
+      Host: dxm.duxaiomai02.filegear-sg.me
   skip-cert-verify: false
 
 - name: trojan-8
@@ -356,12 +356,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: bpb.johnsa.us.kg
+  sni: b.ak50.us.kg
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: bpb.johnsa.us.kg
+      Host: b.ak50.us.kg
   skip-cert-verify: false
 
 - name: trojan-9
@@ -369,12 +369,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: lmn.mfflj.us.kg
+  sni: zero.sealuck.nyc.mn
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: lmn.mfflj.us.kg
+      Host: zero.sealuck.nyc.mn
   skip-cert-verify: false
 
 - name: trojan-10
@@ -382,12 +382,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: intertarmi2.filegear-sg.me
+  sni: singbox.xn--8yv720b.us.kg
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: intertarmi2.filegear-sg.me
+      Host: singbox.xn--8yv720b.us.kg
   skip-cert-verify: false
 
 - name: trojan-11
@@ -435,12 +435,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: singaporevip111m.applle3.ir
+  sni: pri3.amirhy.tech
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: singaporevip111m.applle3.ir
+      Host: pri3.amirhy.tech
   skip-cert-verify: false
 
 
@@ -462,12 +462,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: vpn.tianrld.top
+  sni: bpb.cfssr.cf
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: vpn.tianrld.top
+      Host: bpb.cfssr.cf
   skip-cert-verify: false
 
 - name: trojan-17
@@ -489,12 +489,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: lw.ylks.xyz
+  sni: jojeironi.radiomohtava.ir
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: lw.ylks.xyz
+      Host: jojeironi.radiomohtava.ir
   skip-cert-verify: false
 
 - name: trojan-19
@@ -502,12 +502,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: bpb.889604.xyz
+  sni: 1116vpn.xn--chq446a76an00gt7ndna50j.us.kg
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: bpb.889604.xyz
+      Host: 1116vpn.xn--chq446a76an00gt7ndna50j.us.kg
   skip-cert-verify: false
 
 - name: trojan-20
