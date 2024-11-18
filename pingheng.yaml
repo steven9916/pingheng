@@ -543,7 +543,8 @@ proxy-groups:
     - zx9916-us-kg
     - zxing-us-kg
     - trojan-1
-    - trojan-2
+    - trojan-4
+    - trojan-5
     
       
 - name: 🌍选择代理
