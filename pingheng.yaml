@@ -539,8 +539,6 @@ proxy-groups:
     - vless-v4
     - vless-v5
     - vless-v6
-    - vless-v7
-    - warp-wireguard
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
