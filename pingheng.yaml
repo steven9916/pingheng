@@ -27,41 +27,7 @@ dns:
     ipcidr:
       - 240.0.0.0/4
       
-rule-providers:
-  AD:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/AD.yaml"
-    path: ./rules/AD.yaml
-    interval: 86400
-    
-  EasyList:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/EasyList.yaml"
-    path: ./rules/EasyList.yaml
-    interval: 86400
-    
-  EasyListChina:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/EasyListChina.yaml"
-    path: ./rules/EasyListChina.yaml
-    interval: 86400
 
-  EasyPrivacy:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/EasyPrivacy.yaml"
-    path: ./rules/EasyPrivacy.yaml
-    interval: 86400
-
-  ProgramAD:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/ProgramAD.yaml"
-    path: ./rules/ProgramAD.yaml
-    interval: 86400
 # 当前 13 个主流协议节点配置模版，按需求修改，如不需要使用某协议节点，则无需删除，确保代理分流中没有该节点即可
 proxies:
 
@@ -526,7 +492,7 @@ proxies:
   
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:
-- name: 自动选择
+- name: ⚡ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -547,28 +513,165 @@ proxy-groups:
     - trojan-5
     
       
-- name: 🌍选择代理
-  type: select
-  proxies:
-    - 自动选择                        # 自定义添加的节点名称
+  - type: select
+    name: 🛑 广告拦截
+    proxies:
+      - ⚡ 自动选择
+  - type: select
+    name: 💬 AI 服务
+    proxies:
+      - ⚡ 自动选择
+  - type: select
+    name: 📺 哔哩哔哩
+    proxies:
+      - DIRECT
 
+  - type: select
+    name: 📹 油管视频
+    proxies:
+      - ⚡ 自动选择
 
-   
-# 代理规则可自行添加 
+  - type: select
+    name: 🔍 谷歌服务
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: 🏠 私有网络
+    proxies:
+      - DIRECT
+
+  - type: select
+    name: 🔒 国内服务
+    proxies:
+      - DIRECT
+
+  - type: select
+    name: 📲 电报消息
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: 🐱 Github
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: Ⓜ️ 微软服务
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - ⚡ 自动选择
+
+  - type: select
+    name: 🍏 苹果服务
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - ⚡ 自动选择
+
+  - type: select
+    name: 🌐 社交媒体
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: 🎬 流媒体
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: 🎮 游戏平台
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: 📚 教育资源
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: 💰 金融服务
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: ☁️ 云服务
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: 🌐 非中国
+    proxies:
+      - DIRECT
+      - ⚡ 自动选择
+
+  - type: select
+    name: tumblr
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: potato
+    proxies:
+      - ⚡ 自动选择
+
+  - type: select
+    name: 🐟 漏网之鱼
+    proxies:
+      - DIRECT
+      - ⚡ 自动选择
+
 rules:
-  - DOMAIN-SUFFIX,gitlab.com,DIRECT
-  - DOMAIN-SUFFIX,cloudflare.com,DIRECT
-  - DOMAIN-SUFFIX,justcn2.top,DIRECT
-  - DOMAIN,pan.quaek.com,DIRECT
-  - DOMAIN,minbrowser.org,DIRECT
-  - DOMAIN,bpb.steven9916.eu.org,DIRECT  
-  - DOMAIN,9916.eu.org,DIRECT
-  - DOMAIN,bpb.zxing.eu.org,DIRECT
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理
-  - RULE-SET,AD,REJECT
-  - RULE-SET,EasyList,REJECT
-  - RULE-SET,EasyListChina,REJECT
-  - RULE-SET,EasyPrivacy,REJECT
-  - RULE-SET,ProgramAD,REJECT
+  - DOMAIN-SUFFIX,tumblr.com,tumblr
+  - DOMAIN-SUFFIX,potato.im,potato
+  - GEOSITE,category-ads-all,🛑 广告拦截
+  - GEOSITE,openai,💬 AI 服务
+  - GEOSITE,anthropic,💬 AI 服务
+  - GEOSITE,jetbrains-ai,💬 AI 服务
+  - GEOSITE,perplexity,💬 AI 服务
+  - GEOSITE,bilibili,📺 哔哩哔哩
+  - GEOSITE,youtube,📹 油管视频
+  - GEOSITE,google,🔍 谷歌服务
+  - GEOIP,google,🔍 谷歌服务
+  - GEOIP,private,🏠 私有网络
+  - GEOSITE,geolocation-cn,🔒 国内服务
+  - GEOIP,cn,🔒 国内服务
+  - GEOIP,telegram,📲 电报消息
+  - GEOSITE,github,🐱 Github
+  - GEOSITE,gitlab,🐱 Github
+  - GEOSITE,microsoft,Ⓜ️ 微软服务
+  - GEOSITE,apple,🍏 苹果服务
+  - GEOSITE,facebook,🌐 社交媒体
+  - GEOSITE,instagram,🌐 社交媒体
+  - GEOSITE,twitter,🌐 社交媒体
+  - GEOSITE,tiktok,🌐 社交媒体
+  - GEOSITE,linkedin,🌐 社交媒体
+  - GEOSITE,netflix,🎬 流媒体
+  - GEOSITE,hulu,🎬 流媒体
+  - GEOSITE,disney,🎬 流媒体
+  - GEOSITE,hbo,🎬 流媒体
+  - GEOSITE,amazon,🎬 流媒体
+  - GEOSITE,bahamut,🎬 流媒体
+  - GEOSITE,steam,🎮 游戏平台
+  - GEOSITE,epicgames,🎮 游戏平台
+  - GEOSITE,ea,🎮 游戏平台
+  - GEOSITE,ubisoft,🎮 游戏平台
+  - GEOSITE,blizzard,🎮 游戏平台
+  - GEOSITE,coursera,📚 教育资源
+  - GEOSITE,edx,📚 教育资源
+  - GEOSITE,udemy,📚 教育资源
+  - GEOSITE,khanacademy,📚 教育资源
+  - GEOSITE,category-scholar-!cn,📚 教育资源
+  - GEOSITE,paypal,💰 金融服务
+  - GEOSITE,visa,💰 金融服务
+  - GEOSITE,mastercard,💰 金融服务
+  - GEOSITE,stripe,💰 金融服务
+  - GEOSITE,wise,💰 金融服务
+  - GEOSITE,aws,☁️ 云服务
+  - GEOSITE,azure,☁️ 云服务
+  - GEOSITE,digitalocean,☁️ 云服务
+  - GEOSITE,heroku,☁️ 云服务
+  - GEOSITE,dropbox,☁️ 云服务
+  - GEOSITE,geolocation-!cn,🌐 非中国
+  - MATCH,🐟 漏网之鱼
