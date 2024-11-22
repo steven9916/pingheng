@@ -498,7 +498,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  
     - vless-v1
     - vless-v2
     - vless-v3
@@ -517,10 +516,12 @@ proxy-groups:
     name: 🛑 广告拦截
     proxies:
       - ⚡ 自动选择
+
   - type: select
     name: 💬 AI 服务
     proxies:
       - ⚡ 自动选择
+  
   - type: select
     name: 📺 哔哩哔哩
     proxies:
@@ -559,14 +560,12 @@ proxy-groups:
   - type: select
     name: Ⓜ️ 微软服务
     proxies:
-      - 🚀 节点选择
       - DIRECT
       - ⚡ 自动选择
 
   - type: select
     name: 🍏 苹果服务
     proxies:
-      - 🚀 节点选择
       - DIRECT
       - ⚡ 自动选择
 
@@ -623,8 +622,8 @@ proxy-groups:
       - ⚡ 自动选择
 
 rules:
-  - DOMAIN-SUFFIX,tumblr.com,tumblr
-  - DOMAIN-SUFFIX,potato.im,potato
+  - GEOSITE,tumblr,🌐 社交媒体
+  - GEOSITE,potato,🌐 社交媒体
   - GEOSITE,category-ads-all,🛑 广告拦截
   - GEOSITE,openai,💬 AI 服务
   - GEOSITE,anthropic,💬 AI 服务
@@ -640,6 +639,7 @@ rules:
   - GEOIP,telegram,📲 电报消息
   - GEOSITE,github,🐱 Github
   - GEOSITE,gitlab,🐱 Github
+  - DOMAIN-SUFFIX,raw.githubusercontent.com,🐱 Github
   - GEOSITE,microsoft,Ⓜ️ 微软服务
   - GEOSITE,apple,🍏 苹果服务
   - GEOSITE,facebook,🌐 社交媒体
