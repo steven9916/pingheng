@@ -573,7 +573,7 @@ rules:
   - RULE-SET,ProgramAD,REJECT
   - DOMAIN-SUFFIX,tumblr.com,🌍选择代理
   - DOMAIN-SUFFIX,potato.im,🌍选择代理
-  - GEOSITE,category-ads-all,🌍选择代理
+  - GEOSITE,category-ads-all,REJECT
   - GEOSITE,openai,🌍选择代理
   - GEOSITE,anthropic,🌍选择代理
   - GEOSITE,jetbrains-ai,🌍选择代理
