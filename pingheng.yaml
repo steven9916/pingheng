@@ -536,8 +536,6 @@ proxy-groups:
     - vless-v1
     - vless-v2
     - vless-v3
-    - vless-v4
-    - vless-v5
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
@@ -547,7 +545,6 @@ proxy-groups:
     - trojan-1
     - trojan-4
     - trojan-5
-    - trojan-6
 
     
 - name: 🌍选择代理
