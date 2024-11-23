@@ -551,20 +551,7 @@ proxy-groups:
     - trojan-4
     - trojan-5
     - trojan-6
-    - trojan-7
-    - trojan-8
-    - trojan-9
-    - trojan-10
-    - trojan-11
-    - trojan-12
-    - trojan-13
-    - trojan-14
-    - trojan-15
-    - trojan-16
-    - trojan-17
-    - trojan-18
-    - trojan-19
-    - trojan-20
+
     
 - name: 🌍选择代理
   type: select
