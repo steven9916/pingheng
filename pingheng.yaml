@@ -578,7 +578,7 @@ rules:
   - GEOSITE,anthropic,🌍选择代理
   - GEOSITE,jetbrains-ai,🌍选择代理
   - GEOSITE,perplexity,🌍选择代理
-  - GEOSITE,bilibili,📺 哔哩哔哩
+  - GEOSITE,bilibili,DIRECT
   - GEOSITE,youtube,🌍选择代理
   - GEOSITE,google,🌍选择代理
   - GEOIP,google,🌍选择代理
