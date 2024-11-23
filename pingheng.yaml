@@ -536,6 +536,9 @@ proxy-groups:
     - vless-v1
     - vless-v2
     - vless-v3
+    - vless-v4
+    - vless-v5
+    - vless-v6
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
