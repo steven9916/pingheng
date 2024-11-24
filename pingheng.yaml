@@ -123,7 +123,7 @@ proxies:
 
 - name: vless-v5                                   # 可以自定义节点名称
   type: vless
-  server: 2606:4700:3036::ac43:8fb5                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 6.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                       # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   udp: false
@@ -137,7 +137,7 @@ proxies:
 
 - name: vless-v6                               # 可以自定义节点名称
   type: vless
-  server: 2606:4700:3035::ac43:a584                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 6.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   alterId: 0
@@ -153,7 +153,7 @@ proxies:
 
 - name: vless-v7                               # 可以自定义节点名称
   type: vless
-  server: 2606:4700:3037::ac43:d757                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 6.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   alterId: 0
