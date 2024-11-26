@@ -300,12 +300,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: 凯文科技.us.kg
+  sni: xn--w9qt71boicvx4a.us.kg
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: 凯文科技.us.kg
+      Host: xn--w9qt71boicvx4a.us.kg
   skip-cert-verify: false
 
 - name: trojan-4                             # 可以自定义节点名称
