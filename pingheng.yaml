@@ -240,7 +240,7 @@ proxies:
   network: ws
   tls: true
   udp: false
-  sni: edge.zx9916.us.kg
+  servername: edge.zx9916.us.kg
   ws-opts:
     path: "/?ed=2048"
     headers:
