@@ -557,6 +557,8 @@ proxy-groups:
     - warp-wireguard1
     - warp-wireguard2
     - trojan-1
+    - trojan-2
+    - trojan-3
     - trojan-4
 
     
