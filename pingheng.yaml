@@ -554,8 +554,6 @@ proxy-groups:
     - 9916-us-kg
     - zx9916-us-kg
     - zxing-us-kg
-    - warp-wireguard1
-    - warp-wireguard2
     - trojan-1
     - trojan-2
     - trojan-3
