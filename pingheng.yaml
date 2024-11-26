@@ -287,12 +287,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: dghh.junks.dynv6.net
+  sni: bfixed.zsblog.pp.ua
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: dghh.junks.dynv6.net  
+      Host: bfixed.zsblog.pp.ua  
   skip-cert-verify: false
 
 - name: trojan-3                             # 可以自定义节点名称
@@ -300,12 +300,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: f.validbv3528.shop
+  sni: bpb.yingtu.us.kg
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: f.validbv3528.shop
+      Host: bpb.yingtu.us.kg
   skip-cert-verify: false
 
 - name: trojan-4                             # 可以自定义节点名称
@@ -326,12 +326,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: bpb.stone57.v6.army
+  sni: bpb.rusifeng.dynv6.net
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: bpb.stone57.v6.army
+      Host: bpb.rusifeng.dynv6.net
   skip-cert-verify: false
 
 - name: trojan-6                            # 可以自定义节点名称
