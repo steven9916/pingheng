@@ -551,11 +551,11 @@ proxy-groups:
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
-    - zx9916-us-kg
     - trojan-1
     - trojan-2
     - trojan-3
     - trojan-4
+    - trojan-5
 
     
 - name: 🌍选择代理
