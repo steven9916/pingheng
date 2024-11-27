@@ -235,11 +235,11 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: edge.9916.us.kg                         # SNI 域名，与下面 Host 一致
+  servername: yg.9916.us.kg                         # SNI 域名，与下面 Host 一致
   ws-opts:
-    path: "/?ed=2048"                              # 自定义 path 路径
+    path: "/?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: edge.9916.us.kg                           # Host 域名，与上面 server 字段的地址一致
+      Host: yg.9916.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
 - name: zx9916-us-kg                               # 可以自定义节点名称
   type: vless
@@ -249,11 +249,11 @@ proxies:
   network: ws
   tls: true
   udp: false
-  servername: edge.zx9916.us.kg
+  servername: yg.zx9916.us.kg
   ws-opts:
-    path: "/?ed=2048"
+    path: "/?ed=2560"
     headers:
-      host: edge.zx9916.us.kg
+      host: yg.zx9916.us.kg
 
 - name: zxing-us-kg                               # 可以自定义节点名称
   type: vless
@@ -263,11 +263,11 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: edge.zxing.us.kg                       # SNI 域名，与下面 Host 一致
+  servername: yg.zxing.us.kg                       # SNI 域名，与下面 Host 一致
   ws-opts:
-    path: "/?ed=2048"                              # 自定义 path 路径
+    path: "/?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: edge.zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
+      Host: yg.zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
 - name: trojan-1                             # 可以自定义节点名称
   type: trojan
@@ -551,6 +551,9 @@ proxy-groups:
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
+    - 9916-us-kg
+    - zxing-us-kg
+    - zx9916-us-kg
     - trojan-1
     - trojan-2
     - trojan-3
