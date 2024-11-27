@@ -237,7 +237,7 @@ proxies:
   network: ws
   servername: yg.9916.us.kg                         # SNI 域名，与下面 Host 一致
   ws-opts:
-    path: "/?ed=2048"                              # 自定义 path 路径
+    path: "/?ed=2560"                              # 自定义 path 路径
     headers:
       Host: yg.9916.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
@@ -251,7 +251,7 @@ proxies:
   udp: false
   servername: yg.zx9916.us.kg
   ws-opts:
-    path: "/?ed=2048"
+    path: "/?ed=2560"
     headers:
       host: yg.zx9916.us.kg
 
@@ -265,7 +265,7 @@ proxies:
   network: ws
   servername: yg.zxing.us.kg                       # SNI 域名，与下面 Host 一致
   ws-opts:
-    path: "/?ed=2048"                              # 自定义 path 路径
+    path: "/?ed=2560"                              # 自定义 path 路径
     headers:
       Host: edge.zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
