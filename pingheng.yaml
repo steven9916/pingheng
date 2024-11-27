@@ -326,12 +326,12 @@ proxies:
   server: 443.9916.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: bpb-trojan                              # 自定义认证密码
-  sni: bpb.rusifeng.dynv6.net
+  sni: zdevelop.phoenixv.shop
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: bpb.rusifeng.dynv6.net
+      Host: zdevelop.phoenixv.shop
   skip-cert-verify: false
 
 - name: trojan-6                            # 可以自定义节点名称
@@ -551,11 +551,11 @@ proxy-groups:
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
-    - zx9916-us-kg
     - trojan-1
     - trojan-2
     - trojan-3
     - trojan-4
+    - trojan-5
 
 
 - name: 🌍选择代理
