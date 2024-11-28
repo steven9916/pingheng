@@ -602,6 +602,8 @@ proxy-groups:
   type: select
   proxies:
     - 自动选择                        # 自定义添加的节点名称
+    - warp-wireguard1
+    - warp-wireguard2
 
 
    
