@@ -235,11 +235,11 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: yg.9916.ru.org                         # SNI 域名，与下面 Host 一致
+  servername: yg.9916.eu.org                         # SNI 域名，与下面 Host 一致
   ws-opts:
     path: "/?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: yg.9916.ru.org                           # Host 域名，与上面 server 字段的地址一致
+      Host: yg.9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
 - name: steven9916-eu-org                             # 可以自定义节点名称
   type: vless
@@ -264,11 +264,11 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  servername: yg.zxing.eu.org                         # SNI 域名，与下面 Host 一致
   ws-opts:
     path: "/?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+      Host: yg.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
 - name: 9916-us-kg                               # 可以自定义节点名称
   type: vless
