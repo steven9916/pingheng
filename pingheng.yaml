@@ -81,7 +81,7 @@ proxies:
 
 - name: vless-v2                              # 可以自定义节点名称
   type: vless
-  server: 172.67.143.181                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   udp: false
@@ -95,7 +95,7 @@ proxies:
 
 - name: vless-v3                              # 可以自定义节点名称
   type: vless
-  server: 172.67.165.132                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   udp: false
@@ -109,7 +109,7 @@ proxies:
 
 - name: vless-v4                           # 可以自定义节点名称
   type: vless
-  server: 172.67.215.87                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   udp: false
@@ -123,7 +123,7 @@ proxies:
 
 - name: vless-v5                                   # 可以自定义节点名称
   type: vless
-  server: 2606:4700:3036::ac43:8fb5                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                       # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   udp: false
@@ -137,7 +137,7 @@ proxies:
 
 - name: vless-v6                               # 可以自定义节点名称
   type: vless
-  server: 2606:4700:3035::ac43:a584                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   alterId: 0
@@ -153,7 +153,7 @@ proxies:
 
 - name: vless-v7                               # 可以自定义节点名称
   type: vless
-  server: 2606:4700:3037::ac43:d757                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 6.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   alterId: 0
@@ -167,13 +167,22 @@ proxies:
     headers:
       Host: bpb.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
-- name: warp-wireguard                                       # 可以自定义节点名称
+- name: warp-wireguard1                                       # 可以自定义节点名称
   type: wireguard         
   server: 162.159.195.255                                     # 可自定义优选 EndPoint IP，与下方端口相对应
   port: 1180                                                 # 可自定义优选 EndPoint IP，与上方 IP 相对应
   ip: 172.16.0.2
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   private-key: OLx1djIFQ7+EAu0pufciWEtZPeEFjqS97cPcFDec5Hg=  # 获取 warp 的 私钥
+  udp: true
+
+- name: warp-wireguard2                                       # 可以自定义节点名称
+  type: wireguard         
+  server: 162.159.195.255                                     # 可自定义优选 EndPoint IP，与下方端口相对应
+  port: 1180                                                 # 可自定义优选 EndPoint IP，与上方 IP 相对应
+  ip: 172.16.0.2
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  private-key: gJuKY7WBvpBH0u02OGc08REkC2t6S3Z2jDggxYQKrE8=  # 获取 warp 的 私钥
   udp: true
 
 - name: us-fd-zxing                               # 可以自定义节点名称
@@ -218,29 +227,364 @@ proxies:
     headers:
       Host: luyou.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
+- name: 9916-eu-org                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.9916.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
+- name: steven9916-eu-org                             # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.steven9916.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+
+- name: zxing-eu-org                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: 9916-us-kg                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.9916.us.kg                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.9916.us.kg                           # Host 域名，与上面 server 字段的地址一致
+
+- name: zx9916-us-kg                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org
+  port: 443
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0
+  network: ws
+  tls: true
+  udp: false
+  servername: yg.zx9916.us.kg
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      host: yg.zx9916.us.kg
+
+- name: zxing-us-kg                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.zxing.us.kg                       # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
+
+- name: trojan-1                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: andylau19801.nyc.mn
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: andylau19801.nyc.mn
+  skip-cert-verify: false
+
+- name: trojan-2                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: ljj.mrwangransen.dynv6.net
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: ljj.mrwangransen.dynv6.net
+  skip-cert-verify: false
+
+- name: trojan-3                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: xn--w9qt71boicvx4a.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: xn--w9qt71boicvx4a.us.kg
+  skip-cert-verify: false
+
+- name: trojan-4                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.lzjh.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.lzjh.us.kg
+  skip-cert-verify: false
+
+- name: trojan-5                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: zdevelop.phoenixv.shop
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: zdevelop.phoenixv.shop
+  skip-cert-verify: false
+
+- name: trojan-6                            # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.macser.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.macser.us.kg
+  skip-cert-verify: false
+
+- name: trojan-7                            # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: dxm.duxaiomai02.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: dxm.duxaiomai02.filegear-sg.me
+  skip-cert-verify: false
+
+- name: trojan-8
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: b.ak50.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: b.ak50.us.kg
+  skip-cert-verify: false
+
+- name: trojan-9
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: zero.sealuck.nyc.mn
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: zero.sealuck.nyc.mn
+  skip-cert-verify: false
+
+- name: trojan-10
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: singbox.xn--8yv720b.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: singbox.xn--8yv720b.us.kg
+  skip-cert-verify: false
+
+- name: trojan-11
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: sstm.stm21-et-borde.ggff.net
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: sstm.stm21-et-borde.ggff.net
+  skip-cert-verify: false
+
+- name: trojan-12
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: dghh.junks.dynv6.net
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: dghh.junks.dynv6.net
+  skip-cert-verify: false
+
+- name: trojan-13
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: salu233.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: salu233.us.kg
+  skip-cert-verify: false
+
+
+- name: trojan-14
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: pri3.amirhy.tech
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: pri3.amirhy.tech
+  skip-cert-verify: false
+
+
+- name: trojan-15
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: wakeup5211.ggff.net
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: wakeup5211.ggff.net
+  skip-cert-verify: false
+
+- name: trojan-16
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.cfssr.cf
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.cfssr.cf
+  skip-cert-verify: false
+
+- name: trojan-17
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: ycctcc.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: ycctcc.us.kg
+  skip-cert-verify: false
+
+
+- name: trojan-18
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: jojeironi.radiomohtava.ir
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: jojeironi.radiomohtava.ir
+  skip-cert-verify: false
+
+- name: trojan-19
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: 1116vpn.xn--chq446a76an00gt7ndna50j.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: 1116vpn.xn--chq446a76an00gt7ndna50j.us.kg
+  skip-cert-verify: false
+
+- name: trojan-20
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.cc01.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.cc01.us.kg
+  skip-cert-verify: false
+
+  
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:
-- name: 负载均衡
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  proxies:
-  
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
-    - us-fd-zxing
-    - luyou-steven9916
-    - luyou-zxing
-
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  
     - vless-v1
     - vless-v2
     - vless-v3
@@ -248,28 +592,44 @@ proxy-groups:
     - vless-v5
     - vless-v6
     - vless-v7
-    - warp-wireguard
+    - warp-wireguard1
+    - warp-wireguard2
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
-      
+    - 9916-us-kg
+    - zxing-us-kg
+    - zx9916-us-kg
+    - 9916-eu-org
+    - zxing-eu-org
+    - steven9916-eu-org
+    - trojan-1
+    - trojan-2
+    - trojan-3
+    - trojan-4
+    - trojan-5
+    - trojan-6
+    - trojan-7
+    - trojan-8
+    - trojan-9
+    - trojan-10
+    - trojan-11
+    - trojan-12
+    - trojan-13
+    - trojan-14
+    - trojan-15
+    - trojan-16
+    - trojan-17
+    - trojan-18
+    - trojan-19
+    - trojan-20
+    
 - name: 🌍选择代理
   type: select
   proxies:
-    - 负载均衡                        # 自定义添加的节点名称
-    - 自动选择
-    - DIRECT
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
-    - vless-v5
-    - vless-v6
-    - vless-v7
-    - warp-wireguard
-    - us-fd-zxing
-    - luyou-steven9916
-    - luyou-zxing
+    - 自动选择                        # 自定义添加的节点名称
+
+
    
 # 代理规则可自行添加 
 rules:
@@ -283,9 +643,61 @@ rules:
   - DOMAIN,bpb.zxing.eu.org,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理
   - RULE-SET,AD,REJECT
   - RULE-SET,EasyList,REJECT
   - RULE-SET,EasyListChina,REJECT
   - RULE-SET,EasyPrivacy,REJECT
   - RULE-SET,ProgramAD,REJECT
+  - DOMAIN-SUFFIX,tumblr.com,🌍选择代理
+  - DOMAIN-SUFFIX,potato.im,🌍选择代理
+  - GEOSITE,category-ads-all,REJECT
+  - GEOSITE,openai,🌍选择代理
+  - GEOSITE,anthropic,🌍选择代理
+  - GEOSITE,jetbrains-ai,🌍选择代理
+  - GEOSITE,perplexity,🌍选择代理
+  - GEOSITE,bilibili,DIRECT
+  - GEOSITE,youtube,🌍选择代理
+  - GEOSITE,google,🌍选择代理
+  - GEOIP,google,🌍选择代理
+  - GEOIP,private,DIRECT
+  - GEOSITE,geolocation-cn,DIRECT
+  - GEOIP,cn,DIRECT
+  - GEOIP,telegram,🌍选择代理
+  - GEOSITE,github,🌍选择代理
+  - GEOSITE,gitlab,🌍选择代理
+  - DOMAIN-SUFFIX,raw.githubusercontent.com,🌍选择代理
+  - GEOSITE,microsoft,🌍选择代理
+  - GEOSITE,apple,DIRECT
+  - GEOSITE,facebook,🌍选择代理
+  - GEOSITE,instagram,🌍选择代理
+  - GEOSITE,twitter,🌍选择代理
+  - GEOSITE,tiktok,🌍选择代理
+  - GEOSITE,linkedin,🌍选择代理
+  - GEOSITE,netflix,🌍选择代理
+  - GEOSITE,hulu,🌍选择代理
+  - GEOSITE,disney,🌍选择代理
+  - GEOSITE,hbo,🌍选择代理
+  - GEOSITE,amazon,🌍选择代理
+  - GEOSITE,bahamut,🌍选择代理
+  - GEOSITE,steam,🌍选择代理
+  - GEOSITE,epicgames,🌍选择代理
+  - GEOSITE,ea,🌍选择代理
+  - GEOSITE,ubisoft,🌍选择代理
+  - GEOSITE,blizzard,🌍选择代理
+  - GEOSITE,coursera,🌍选择代理
+  - GEOSITE,edx,🌍选择代理
+  - GEOSITE,udemy,🌍选择代理
+  - GEOSITE,khanacademy,🌍选择代理
+  - GEOSITE,category-scholar-!cn,🌍选择代理
+  - GEOSITE,paypal,🌍选择代理
+  - GEOSITE,visa,🌍选择代理
+  - GEOSITE,mastercard,🌍选择代理
+  - GEOSITE,stripe,🌍选择代理
+  - GEOSITE,wise,🌍选择代理
+  - GEOSITE,aws,🌍选择代理
+  - GEOSITE,azure,🌍选择代理
+  - GEOSITE,digitalocean,🌍选择代理
+  - GEOSITE,heroku,🌍选择代理
+  - GEOSITE,dropbox,🌍选择代理
+  - GEOSITE,geolocation-!cn,DIRECT
+  - MATCH,🌍选择代理
