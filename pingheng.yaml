@@ -227,6 +227,49 @@ proxies:
     headers:
       Host: luyou.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
+- name: 9916-eu-org                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.9916.ru.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.9916.ru.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: steven9916-eu-org                             # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.steven9916.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+
+- name: zxing-eu-org                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
 - name: 9916-us-kg                               # 可以自定义节点名称
   type: vless
   server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
@@ -267,7 +310,7 @@ proxies:
   ws-opts:
     path: "/?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: edge.zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
+      Host: yg.zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
 - name: trojan-1                             # 可以自定义节点名称
   type: trojan
@@ -542,23 +585,17 @@ proxy-groups:
   tolerance: 50
   proxies:
   
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
-    - vless-v5
-    - vless-v6
+
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
     - 9916-us-kg
     - zxing-us-kg
     - zx9916-us-kg
-    - trojan-1
-    - trojan-2
-    - trojan-3
-    - trojan-4
-    - trojan-5
+    - 9916-eu-org
+    - zixng-eu-org
+    - steven9916-eu-org
+
 
     
 - name: 🌍选择代理
