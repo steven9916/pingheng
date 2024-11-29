@@ -260,7 +260,270 @@ proxies:
     headers:
       Host: zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
+- name: trojan-1                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: panel.cloudnin.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: panel.cloudnin.us.kg  
+  skip-cert-verify: false
 
+- name: trojan-2                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: dghh.junks.dynv6.net
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: dghh.junks.dynv6.net  
+  skip-cert-verify: false
+
+- name: trojan-3                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: f.validbv3528.shop
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: f.validbv3528.shop
+  skip-cert-verify: false
+
+- name: trojan-4                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.sayousay.me
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.sayousay.me
+  skip-cert-verify: false
+
+- name: trojan-5                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.woxw.top
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.woxw.top
+  skip-cert-verify: false
+
+- name: trojan-6                            # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.macser.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.macser.us.kg
+  skip-cert-verify: false
+
+- name: trojan-7                            # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.radishsub.dynv6.net
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.radishsub.dynv6.net
+  skip-cert-verify: false
+
+- name: trojan-8
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.johnsa.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.johnsa.us.kg
+  skip-cert-verify: false
+
+- name: trojan-9
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: lmn.mfflj.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: lmn.mfflj.us.kg
+  skip-cert-verify: false
+
+- name: trojan-10
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: intertarmi2.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: intertarmi2.filegear-sg.me
+  skip-cert-verify: false
+
+- name: trojan-11
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: sstm.stm21-et-borde.ggff.net
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: sstm.stm21-et-borde.ggff.net
+  skip-cert-verify: false
+
+- name: trojan-12
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: dghh.junks.dynv6.net
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: dghh.junks.dynv6.net
+  skip-cert-verify: false
+
+- name: trojan-13
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: salu233.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: salu233.us.kg
+  skip-cert-verify: false
+
+
+- name: trojan-14
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: singaporevip111m.applle3.ir
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: singaporevip111m.applle3.ir
+  skip-cert-verify: false
+
+
+- name: trojan-15
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: wakeup5211.ggff.net
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: wakeup5211.ggff.net
+  skip-cert-verify: false
+
+- name: trojan-16
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: vpn.tianrld.top
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: vpn.tianrld.top
+  skip-cert-verify: false
+
+- name: trojan-17
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: ycctcc.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: ycctcc.us.kg
+  skip-cert-verify: false
+
+
+- name: trojan-18
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: lw.ylks.xyz
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: lw.ylks.xyz
+  skip-cert-verify: false
+
+- name: trojan-19
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: bpb.889604.xyz
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: bpb.889604.xyz
+  skip-cert-verify: false
+
+- name: trojan-20
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: bpb-trojan                              # 自定义认证密码
+  sni: v222.xboxboy.win
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: v222.xboxboy.win
+  skip-cert-verify: false
+
+  
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:
 - name: 负载均衡
@@ -280,11 +543,33 @@ proxy-groups:
     - 9916-us-kg
     - zx9916-us-kg
     - zxing-us-kg
+    - trojan-1
+    - trojan-2
+    - trojan-3
+    - trojan-4
+    - trojan-5
+    - trojan-6
+    - trojan-7
+    - trojan-8
+    - trojan-9
+    - trojan-10
+    - trojan-11
+    - trojan-12
+    - trojan-13
+    - trojan-14
+    - trojan-15
+    - trojan-16
+    - trojan-17
+    - trojan-18
+    - trojan-19
+    - trojan-20
+    
       
 - name: 🌍选择代理
   type: select
   proxies:
     - 负载均衡                        # 自定义添加的节点名称
+
 
    
 # 代理规则可自行添加 
