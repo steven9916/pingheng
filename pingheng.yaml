@@ -298,6 +298,20 @@ proxies:
     headers:
       host: yg.zx9916.us.kg
 
+- name: edtunnel-9916-eu-org                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org
+  port: 443
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0
+  network: ws
+  tls: true
+  udp: false
+  servername: edtunnel.9916.eu.org
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      host: edtunnel.9916.eu.org
+
 - name: zxing-us-kg                               # 可以自定义节点名称
   type: vless
   server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
@@ -592,7 +606,7 @@ proxy-groups:
     - 9916-us-kg
     - zxing-us-kg
     - zx9916-us-kg
-    - 9916-eu-org
+    - edtunnel-9916-eu-org
     - zxing-eu-org
     - steven9916-eu-org
 
