@@ -170,7 +170,7 @@ proxies:
 - name: warp-wireguard1                                       # 可以自定义节点名称
   type: wireguard         
   server: 162.159.195.93                                     # 可自定义优选 EndPoint IP，与下方端口相对应
-  port: 7152                                               # 可自定义优选 EndPoint IP，与上方 IP 相对应
+  port: 7152                                                 # 可自定义优选 EndPoint IP，与上方 IP 相对应
   ip: 172.16.0.2
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   private-key: OLx1djIFQ7+EAu0pufciWEtZPeEFjqS97cPcFDec5Hg=  # 获取 warp 的 私钥
@@ -178,8 +178,8 @@ proxies:
 
 - name: warp-wireguard2                                       # 可以自定义节点名称
   type: wireguard         
-  server: 162.159.195.93                                    # 可自定义优选 EndPoint IP，与下方端口相对应
-  port: 7152                                               # 可自定义优选 EndPoint IP，与上方 IP 相对应
+  server: 162.159.195.93                                     # 可自定义优选 EndPoint IP，与下方端口相对应
+  port: 7152                                                # 可自定义优选 EndPoint IP，与上方 IP 相对应
   ip: 172.16.0.2
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   private-key: gJuKY7WBvpBH0u02OGc08REkC2t6S3Z2jDggxYQKrE8=  # 获取 warp 的 私钥
@@ -297,6 +297,20 @@ proxies:
     path: "/?ed=2560"
     headers:
       host: yg.zx9916.us.kg
+
+- name: edtunnel-9916-eu-org                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org
+  port: 443
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0
+  network: ws
+  tls: true
+  udp: false
+  servername: edtunnel.9916.eu.org
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      host: edtunnel.9916.eu.org
 
 - name: zxing-us-kg                               # 可以自定义节点名称
   type: vless
@@ -592,7 +606,7 @@ proxy-groups:
     - 9916-us-kg
     - zxing-us-kg
     - zx9916-us-kg
-    - 9916-eu-org
+    - edtunnel-9916-eu-org
     - zxing-eu-org
     - steven9916-eu-org
 
