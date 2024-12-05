@@ -326,6 +326,45 @@ proxies:
     headers:
       Host: yg.zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
+- name: tr-zxing-eu-org                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zxing9916                              # 自定义认证密码
+  sni: tr.zxing.eu.org
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.zxing.eu.org
+  skip-cert-verify: false
+
+- name: tr-steven9916-eu-org                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zxing9916                              # 自定义认证密码
+  sni: tr.steven9916.eu.org
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.steven9916.eu.org
+  skip-cert-verify: false
+
+- name: tr-zx9916-us-kg                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zxing9916                              # 自定义认证密码
+  sni: tr.zx9916.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.zx9916.us.kg
+  skip-cert-verify: false
+
 - name: trojan-1                             # 可以自定义节点名称
   type: trojan
   server: 443.9916.eu.org                             # 解析的域名
@@ -609,6 +648,9 @@ proxy-groups:
     - edtunnel-9916-eu-org
     - zxing-eu-org
     - steven9916-eu-org
+    - tr-zxing-eu-org
+    - tr-steven9916-eu-org
+    - tr-zx9916-us-kg
 
 
     
