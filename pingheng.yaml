@@ -284,11 +284,34 @@ proxy-groups:
     - tr-steven9916-eu-org
     - tr-zx9916-us-kg
 
+proxy-groups:
+- name: 负载均衡
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+
+    - 9916-eu-org
+    - tr-9916-eu-org
+    - us-fd-zxing
+    - luyou-steven9916
+    - luyou-zxing
+    - 9916-us-kg
+    - zxing-us-kg
+    - zx9916-us-kg
+    - edtunnel-9916-eu-org
+    - zxing-eu-org
+    - steven9916-eu-org
+    - tr-zxing-eu-org
+    - tr-steven9916-eu-org
+    - tr-zx9916-us-kg
+  
     
 - name: 🌍选择代理
   type: select
   proxies:
     - 自动选择                        # 自定义添加的节点名称
+    - 负载均衡
 
 
 
