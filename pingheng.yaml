@@ -326,6 +326,20 @@ proxies:
     headers:
       Host: yg.zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
+- name: 9916-eu-org                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.9916.eu.org                       # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.9916.eu.org                          # Host 域名，与上面 server 字段的地址一致
+
 - name: tr-zxing-eu-org                             # 可以自定义节点名称
   type: trojan
   server: 443.9916.eu.org                             # 解析的域名
@@ -363,6 +377,19 @@ proxies:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
       Host: tr.zx9916.us.kg
+  skip-cert-verify: false
+
+- name: tr-9916-eu-org                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zx2009211846                              # 自定义认证密码
+  sni: tr.9916.eu.org
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.9916.eu.org
   skip-cert-verify: false
 
 - name: trojan-1                             # 可以自定义节点名称
@@ -651,6 +678,8 @@ proxy-groups:
     - tr-zxing-eu-org
     - tr-steven9916-eu-org
     - tr-zx9916-us-kg
+    - 9916-eu-org
+    - tr-9916-eu-org
 
 
     
@@ -658,8 +687,7 @@ proxy-groups:
   type: select
   proxies:
     - 自动选择                        # 自定义添加的节点名称
-    - warp-wireguard1
-    - warp-wireguard2
+
 
 
    
