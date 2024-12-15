@@ -269,7 +269,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   
-
+    - 9916-eu-org
+    - tr-9916-eu-org
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
@@ -282,9 +283,6 @@ proxy-groups:
     - tr-zxing-eu-org
     - tr-steven9916-eu-org
     - tr-zx9916-us-kg
-    - 9916-eu-org
-    - tr-9916-eu-org
-
 
     
 - name: 🌍选择代理
