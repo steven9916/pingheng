@@ -284,7 +284,6 @@ proxy-groups:
     - tr-steven9916-eu-org
     - tr-zx9916-us-kg
 
-proxy-groups:
 - name: 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
