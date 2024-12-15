@@ -309,6 +309,9 @@ proxy-groups:
     
 - name: 🌍选择代理
   type: select
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
   proxies:
     - 自动选择                        # 自定义添加的节点名称
     - 负载均衡
