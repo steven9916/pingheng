@@ -277,7 +277,6 @@ proxy-groups:
     - 9916-us-kg
     - zxing-us-kg
     - zx9916-us-kg
-    - edtunnel-9916-eu-org
     - zxing-eu-org
     - steven9916-eu-org
     - tr-zxing-eu-org
