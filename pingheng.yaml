@@ -178,19 +178,6 @@ proxies:
     headers:
       host: yg.zx9916.us.kg
 
-- name: edtunnel-9916-eu-org                               # 可以自定义节点名称
-  type: vless
-  server: 443.9916.eu.org
-  port: 443
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0
-  network: ws
-  tls: true
-  udp: false
-  servername: edtunnel.9916.eu.org
-  ws-opts:
-    path: "/?ed=2560"
-    headers:
-      host: edtunnel.9916.eu.org
 
 - name: zxing-us-kg                               # 可以自定义节点名称
   type: vless
@@ -258,6 +245,32 @@ proxies:
       Host: tr.9916.eu.org
   skip-cert-verify: false
 
+- name: tr-9916-us-kg                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zx2009211846                              # 自定义认证密码
+  sni: tr.9916.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.9916.us.kg
+  skip-cert-verify: false
+
+- name: tr-zxing-us-kg                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zx2009211846                              # 自定义认证密码
+  sni: tr.zxing.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.zxing.us.kg
+  skip-cert-verify: false
+
 
   
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
@@ -282,6 +295,8 @@ proxy-groups:
     - tr-zxing-eu-org
     - tr-steven9916-eu-org
     - tr-zx9916-us-kg
+    - tr-zxing-us-kg
+    - tr-9916-us-kg 
 
 - name: 负载均衡
   type: load-balance
@@ -302,13 +317,12 @@ proxy-groups:
     - tr-zxing-eu-org
     - tr-steven9916-eu-org
     - tr-zx9916-us-kg
-  
-    
+    - tr-zxing-us-kg
+    - tr-9916-us-kg 
+
+   
 - name: 🌍选择代理
   type: select
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
   proxies:
     - 自动选择                        # 自定义添加的节点名称
     - 负载均衡
