@@ -365,7 +365,7 @@ rules:
   - GEOSITE,github,🌍选择代理
   - GEOSITE,gitlab,🌍选择代理
   - DOMAIN-SUFFIX,raw.githubusercontent.com,🌍选择代理
-  - GEOSITE,microsoft,🌍选择代理
+  - GEOSITE,microsoft,DIRECT
   - GEOSITE,apple,DIRECT
   - GEOSITE,facebook,🌍选择代理
   - GEOSITE,instagram,🌍选择代理
