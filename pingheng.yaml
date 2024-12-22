@@ -377,6 +377,7 @@ rules:
   - GEOSITE,disney,🌍选择代理
   - GEOSITE,hbo,🌍选择代理
   - GEOSITE,amazon,🌍选择代理
+  - GEOSITE,spotify,🌍选择代理
   - GEOSITE,bahamut,🌍选择代理
   - GEOSITE,steam,🌍选择代理
   - GEOSITE,epicgames,🌍选择代理
