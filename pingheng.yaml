@@ -326,7 +326,21 @@ proxy-groups:
   proxies:
     - 自动选择                        # 自定义添加的节点名称
     - 负载均衡
-
+    - 9916-eu-org
+    - tr-9916-eu-org
+    - us-fd-zxing
+    - luyou-steven9916
+    - luyou-zxing
+    - 9916-us-kg
+    - zxing-us-kg
+    - zx9916-us-kg
+    - zxing-eu-org
+    - steven9916-eu-org
+    - tr-zxing-eu-org
+    - tr-steven9916-eu-org
+    - tr-zx9916-us-kg
+    - tr-zxing-us-kg
+    - tr-9916-us-kg 
 
 
    
