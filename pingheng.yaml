@@ -255,18 +255,7 @@ proxy-groups:
     - tr-zxing-us-kg
     - tr-9916-us-kg 
 
-- name: 负载均衡
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  proxies:
-
-    - tr-9916-eu-org
-    - tr-zxing-eu-org
-    - tr-steven9916-eu-org
-    - tr-zx9916-us-kg
-    - tr-zxing-us-kg
-    - tr-9916-us-kg 
+ 
 
 
 
@@ -275,7 +264,7 @@ proxy-groups:
   type: select
   proxies:
     - 自动选择                        # 自定义添加的节点名称
-    - 负载均衡
+   
 
 
 
