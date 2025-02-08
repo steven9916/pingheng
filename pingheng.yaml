@@ -264,8 +264,6 @@ proxy-groups:
   proxies:
 
     - 9916-eu-org
-    - luyou-steven9916
-    - luyou-zxing
     - 9916-us-kg
     - zxing-us-kg
     - zx9916-us-kg
