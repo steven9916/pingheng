@@ -344,6 +344,7 @@ rules:
   - GEOIP,CN,DIRECT
   - RULE-SET,AD,REJECT
   - RULE-SET,EasyList,REJECT
+  - DOMAIN-SUFFIX,lyricify.app,🌍选择代理
   - RULE-SET,EasyListChina,REJECT
   - RULE-SET,EasyPrivacy,REJECT
   - RULE-SET,ProgramAD,REJECT
