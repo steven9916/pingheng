@@ -289,6 +289,7 @@ rules:
   - GEOSITE,google,🌍选择代理
   - GEOIP,google,🌍选择代理
   - GEOIP,private,DIRECT
+  - DOMAIN-SUFFIX,lyricify.app,🌍选择代理
   - GEOSITE,geolocation-cn,DIRECT
   - GEOIP,cn,DIRECT
   - GEOIP,telegram,🌍选择代理
