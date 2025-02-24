@@ -313,6 +313,7 @@ rules:
   - DOMAIN-SUFFIX,raw.githubusercontent.com,🌍选择代理
   - GEOSITE,microsoft,DIRECT
   - GEOSITE,apple,DIRECT
+  - DOMAIN-SUFFIX,lyricify.app,🌍选择代理
   - GEOSITE,facebook,🌍选择代理
   - GEOSITE,instagram,🌍选择代理
   - GEOSITE,twitter,🌍选择代理
