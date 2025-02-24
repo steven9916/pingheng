@@ -360,6 +360,7 @@ rules:
   - RULE-SET,EasyList,REJECT
   - RULE-SET,EasyListChina,REJECT
   - RULE-SET,EasyPrivacy,REJECT
+  - DOMAIN-SUFFIX,lyricify.app,🌍选择代理
   - RULE-SET,ProgramAD,REJECT
   - DOMAIN-SUFFIX,tumblr.com,🌍选择代理
   - DOMAIN-SUFFIX,potato.im,🌍选择代理
