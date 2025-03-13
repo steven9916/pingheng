@@ -24,21 +24,216 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  -
-   name: 9916-eu-org                               # 可以自定义节点名称
-   type: vless
-   server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
-   port: 443                                      # 自定义端口
-   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-   udp: false
-   tls: true
-   network: ws
-   servername: yg.9916.eu.org                         # SNI 域名，与下面 Host 一致
-   ws-opts:
-     path: "/?ed=2560"                              # 自定义 path 路径
-     headers:
-       Host: yg.9916.eu.org
- 
+
+- name: us-fd-zxing                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: us.zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/"                              # 自定义 path 路径
+    headers:
+      Host: us.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: luyou-steven9916                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: 8179d515-b364-455f-9452-5a47b644ddc1       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: luyou.steven9916.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2048"                              # 自定义 path 路径
+    headers:
+      Host: luyou.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+      
+- name: luyou-zxing                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: 66fca8e6-868d-4a41-a115-d3ea1dcd9955       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: luyou.zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2048"                              # 自定义 path 路径
+    headers:
+      Host: luyou.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: 9916-eu-org                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.9916.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: steven9916-eu-org                             # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.steven9916.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+
+- name: zxing-eu-org                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
+
+- name: 9916-us-kg                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.9916.us.kg                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.9916.us.kg                           # Host 域名，与上面 server 字段的地址一致
+
+- name: zx9916-us-kg                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org
+  port: 443
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0
+  network: ws
+  tls: true
+  udp: false
+  servername: yg.zx9916.us.kg
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      host: yg.zx9916.us.kg
+
+
+- name: zxing-us-kg                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: yg.zxing.us.kg                       # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: yg.zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
+
+- name: tr-zxing-eu-org                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zxing9916                              # 自定义认证密码
+  sni: tr.zxing.eu.org
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.zxing.eu.org
+  skip-cert-verify: false
+
+- name: tr-steven9916-eu-org                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zxing9916                              # 自定义认证密码
+  sni: tr.steven9916.eu.org
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.steven9916.eu.org
+  skip-cert-verify: false
+
+- name: tr-zx9916-us-kg                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zxing9916                              # 自定义认证密码
+  sni: tr.zx9916.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.zx9916.us.kg
+  skip-cert-verify: false
+
+- name: tr-9916-eu-org                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zx2009211846                              # 自定义认证密码
+  sni: tr.9916.eu.org
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.9916.eu.org
+  skip-cert-verify: false
+
+- name: tr-9916-us-kg                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zx2009211846                              # 自定义认证密码
+  sni: tr.9916.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.9916.us.kg
+  skip-cert-verify: false
+
+- name: tr-zxing-us-kg                             # 可以自定义节点名称
+  type: trojan
+  server: 443.9916.eu.org                             # 解析的域名
+  port: 443                                      # 自定义端口
+  password: zx2009211846                              # 自定义认证密码
+  sni: tr.zxing.us.kg
+  network: ws
+  ws-opts:
+    path: "/tr?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: tr.zxing.us.kg
+  skip-cert-verify: false
+
+
+  
+# 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:
 - name: 自动选择
   type: url-test
