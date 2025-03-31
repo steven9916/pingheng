@@ -33,7 +33,7 @@ proxies:
 
 - name: 9916-eu-org                               # 可以自定义节点名称
   type: vless
-  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 443.zxing.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   udp: false
@@ -47,7 +47,7 @@ proxies:
 
 - name: steven9916-eu-org                             # 可以自定义节点名称
   type: vless
-  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 443.zxing.eu.org                            # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   udp: false
@@ -62,7 +62,7 @@ proxies:
 
 - name: zxing-eu-org                               # 可以自定义节点名称
   type: vless
-  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  server: 443.zxing.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
   uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
   udp: false
@@ -77,7 +77,7 @@ proxies:
 
 - name: tr-zxing-eu-org                             # 可以自定义节点名称
   type: trojan
-  server: 443.9916.eu.org                             # 解析的域名
+  server: 443.zxing.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: zx2009211846                              # 自定义认证密码
   sni: kkktr.zxing.eu.org
@@ -90,7 +90,7 @@ proxies:
 
 - name: tr-steven9916-eu-org                             # 可以自定义节点名称
   type: trojan
-  server: 443.9916.eu.org                             # 解析的域名
+  server: 443.zxing.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: zx2009211846                              # 自定义认证密码
   sni: kkktr.steven9916.eu.org
@@ -103,7 +103,7 @@ proxies:
 
 - name: tr-9916-eu-org                             # 可以自定义节点名称
   type: trojan
-  server: 443.9916.eu.org                             # 解析的域名
+  server: 443.zxing.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: zx2009211846                              # 自定义认证密码
   sni: kkktr.9916.eu.org
