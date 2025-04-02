@@ -53,11 +53,11 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: kkk.steven9916.eu.org                         # SNI 域名，与下面 Host 一致
+  servername: zhou.steven9916.eu.org                         # SNI 域名，与下面 Host 一致
   ws-opts:
     path: "/?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: kkk.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+      Host: zhou.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
 
 - name: zxing-eu-org                               # 可以自定义节点名称
@@ -93,12 +93,12 @@ proxies:
   server: 443.zxing.eu.org                             # 解析的域名
   port: 443                                      # 自定义端口
   password: zx2009211846                              # 自定义认证密码
-  sni: kkktr.steven9916.eu.org
+  sni: zhou.steven9916.eu.org
   network: ws
   ws-opts:
     path: "/tr?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: kkktr.steven9916.eu.org
+      Host: zhou.steven9916.eu.org
   skip-cert-verify: false
 
 - name: tr-9916-eu-org                             # 可以自定义节点名称
